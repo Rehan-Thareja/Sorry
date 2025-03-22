@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry I Missed Your Call</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #111;
+            color: #fff;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #ff0066, #ff9900);
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 20px rgba(255, 0, 102, 0.5);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            text-shadow: 3px 3px 0px rgba(0,0,0,0.3);
+            animation: neonGlow 1.5s ease-in-out infinite alternate;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .section {
+            border-radius: 15px;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .section1 {
+            background: linear-gradient(45deg, #3498db, #00c6ff);
+        }
+        
+        .section2 {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+        }
+        
+        .section3 {
+            background: linear-gradient(45deg, #7b4397, #dc2430);
+        }
+        
+        .section4 {
+            background: linear-gradient(45deg, #11998e, #38ef7d);
+        }
+        
+        .section5 {
+            background: linear-gradient(45deg, #8e2de2, #4a00e0);
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        }
+        
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+            line-height: 1.8;
+        }
+        
+        .sorry-text {
+            font-size: 2.5rem;
+            font-weight: 900;
+            display: block;
+            margin: 1rem 0 2rem 0;
+            text-align: center;
+            color: #fff;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+        }
+        
+        /* Dynamic Animations */
+        @keyframes neonGlow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff0066, 0 0 40px #ff0066;
+            }
+            to {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff0066, 0 0 20px #ff0066;
+            }
+        }
+        
+        @keyframes rotateAndScale {
+            0% { transform: rotate(0deg) scale(1); }
+            50% { transform: rotate(10deg) scale(1.2); }
+            100% { transform: rotate(0deg) scale(1); }
+        }
+        
+        @keyframes wavyText {
+            0%, 100% { transform: translateY(0); }
+            25% { transform: translateY(-15px); }
+            50% { transform: translateY(0); }
+            75% { transform: translateY(15px); }
+        }
+        
+        @keyframes shakeVibrate {
+            0%, 100% { transform: translate(0, 0) rotate(0); }
+            20% { transform: translate(-10px, 0) rotate(-5deg); }
+            40% { transform: translate(10px, 0) rotate(5deg); }
+            60% { transform: translate(-10px, 0) rotate(-5deg); }
+            80% { transform: translate(10px, 0) rotate(5deg); }
+        }
+        
+        @keyframes popIn {
+            0% { transform: scale(0); opacity: 0; }
+            60% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        
+        @keyframes splitLetters {
+            0% { letter-spacing: normal; transform: scale(1); }
+            50% { letter-spacing: 20px; transform: scale(1.2); }
+            100% { letter-spacing: normal; transform: scale(1); }
+        }
+        
+        .sorry1 {
+            animation: neonGlow 2s ease-in-out infinite alternate;
+        }
+        
+        .sorry2 {
+            animation: rotateAndScale 2s ease-in-out infinite;
+            display: inline-block;
+        }
+        
+        .sorry3 {
+            animation: wavyText 3s ease-in-out infinite;
+            display: inline-block;
+        }
+        
+        .sorry4 {
+            animation: shakeVibrate 0.5s ease-in-out infinite;
+            display: inline-block;
+        }
+        
+        .sorry5 {
+            animation: splitLetters 3s ease-in-out infinite;
+            display: inline-block;
+        }
+        
+        .content-animate {
+            animation: popIn 1s ease-out;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2.5rem 0;
+            background: linear-gradient(135deg, #333, #111);
+            color: white;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>I MISSED YOUR CALL</h1>
+            <p style="font-size: 1.3rem; font-weight: 600;">Please accept my sincere apologies</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="section section1">
+            <div class="content-animate">
+                <h2>Internet Issues</h2>
+                <span class="sorry-text sorry1">SO SORRY!</span>
+                <p>
+                    I sincerely apologize for missing your call. My internet was completely down, making it impossible 
+                    to receive any calls or messages. I fixed the problem as soon as I could and I'm reaching out now to 
+                    make things right.
+                </p>
+            </div>
+        </section>
+        
+        <section class="section section2">
+            <div class="content-animate">
+                <h2>Super Busy Schedule</h2>
+                <span class="sorry-text sorry2">REALLY SORRY!</span>
+                <p>
+                    When you called, I was completely swamped with urgent tasks that demanded my full attention. 
+                    I should have prioritized getting back to you sooner. Please know that missing your call wasn't 
+                    intentional – I genuinely value our communication.
+                </p>
+            </div>
+        </section>
+        
+        <section class="section section3">
+            <div class="content-animate">
+                <h2>Traveling With Dad</h2>
+                <span class="sorry-text sorry3">DEEPLY SORRY!</span>
+                <p>
+                    At the exact moment you called, I was riding on a bike with my father. We were traveling 
+                    together, and I couldn't safely answer the phone while on the road. Your safety and mine 
+                    are top priorities, which is why I waited until we stopped to check my messages.
+                </p>
+            </div>
+        </section>
+        
+        <section class="section section4">
+            <div class="content-animate">
+                <h2>Phone On Silent Mode</h2>
+                <span class="sorry-text sorry4">TERRIBLY SORRY!</span>
+                <p>
+                    My phone was set to silent mode, and I completely missed your incoming call. I often silence my 
+                    phone during important meetings and forgot to turn the ringer back on afterward. I only realized 
+                    I'd missed your call when I finally checked my phone later.
+                </p>
+            </div>
+        </section>
+        
+        <section class="section section5">
+            <div class="content-animate">
+                <h2>Let's Connect Soon</h2>
+                <span class="sorry-text sorry5">SINCERELY SORRY!</span>
+                <p>
+                    I'm fully available now to talk whenever it works for you. Please let me know the best time to 
+                    call you back, or feel free to reach out again. I promise to be much more responsive going forward 
+                    and make up for missing your call.
+                </p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p style="font-size: 1.2rem; font-weight: 600;">Thank you for your understanding. I'm looking forward to connecting with you soon!</p>
+        </div>
+    </footer>
+</body>
+</html>
